@@ -54,11 +54,9 @@ img {
   margin: 0 auto;
   /* outline: 2px solid tomato; */
 }
-/* .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-} */
-
+.section {
+  padding: 94px 0;
+}
 /* Логотип */
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -82,14 +80,17 @@ img {
 .contacts {
   list-style: none;
 }
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
 .contacts-link {
   text-decoration: none;
-
   font-weight: 500;
-
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-collor);
+  padding: 32px 0;
+  display: block;
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -97,19 +98,19 @@ img {
 }
 
 /* Навігація Хедер */
-.container.site-container {
-  display: flex;
-  align-items: center;
+.header {
   border: 1px solid #ececec;
   border-top: none;
   border-right: none;
   border-left: none;
 }
+.container.site-container {
+  display: flex;
+  align-items: center;
+}
 .site-nav {
   list-style: none;
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 .site-item:not(:last-child) {
   margin-right: 50px;
@@ -123,16 +124,15 @@ img {
   margin-left: auto;
   align-items: center;
 }
-.contacts-link {
-  margin-right: 50px;
-}
+
 .link {
   text-decoration: none;
   font-weight: 500;
-
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-collor);
+  padding: 32px 0;
+  display: block;
 }
 .link:hover,
 .link:focus {
@@ -161,8 +161,7 @@ img {
   list-style: none;
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 34px;
+  margin-bottom: 50px;
 }
 .button-item:not(:last-child) {
   margin-right: 9px;
@@ -199,7 +198,6 @@ img {
   flex-wrap: wrap;
   flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
   margin: calc(-1 * var(--indent) / 2);
-  margin-bottom: 94px;
 }
 .portfolio-text {
   padding: 20px 24px;
@@ -225,7 +223,7 @@ img {
   color: var(--secondary-collor);
 }
 /* Підвал */
-.container.about-footer {
+.about-footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondarybg-color);
@@ -302,13 +300,14 @@ img {
   margin-bottom: 30px;
 }
 /*Головна кнопка */
+.hero {
+  padding: 200px 0;
+  background-color: var(--secondarybg-color);
+}
 .container.background-div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--secondarybg-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .button-primary {
@@ -318,6 +317,9 @@ img {
   color: var(--background-color);
   background-color: var(--accent-collor);
   font-family: inherit;
+  font-weight: 700;
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 .button-primary:hover,
 .button-primary:focus {
@@ -333,8 +335,6 @@ img {
   list-style: none;
   display: flex;
   align-items: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .feature-iteam:not(:last-child) {
   margin-right: 30px;
@@ -369,12 +369,10 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-collor);
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 .title-list {
   list-style: none;
   display: flex;
-  padding-bottom: 94px;
 }
 
 .title-iteam:not(:last-child) {
@@ -388,12 +386,10 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-collor);
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 .title-list-team {
   list-style: none;
   display: flex;
-  padding-bottom: 94px;
 }
 .title-list-li {
   background-color: var(--background-color);
