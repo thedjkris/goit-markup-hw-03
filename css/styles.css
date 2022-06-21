@@ -57,6 +57,9 @@ img {
 .section {
   padding: 94px 0;
 }
+.section.section-work {
+  padding-top: 0;
+}
 /* Логотип */
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -350,7 +353,6 @@ img {
   margin-bottom: 10px;
 }
 .feature-p {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   line-height: 1.7;
